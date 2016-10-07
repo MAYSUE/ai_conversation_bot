@@ -1,0 +1,37 @@
+body {
+	margin: 0;
+    padding: 0;
+     }
+
+        .half-panel {
+            border: solid 1px gray;
+            min-height: 20px;
+            height: auto;
+            font-family: monospace;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+
+.server{
+	color:blue;
+	display:none;
+
+}
+.token{
+	color: orange;
+	display:none;
+}
+
+
+
+
+
+.mainCont{
+	text-align: center;
+	margin-bottom: 50px;
+
+}
+
