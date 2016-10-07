@@ -1,6 +1,7 @@
+Hello Hello Hello
 JavaScript SDK for Api.ai
 =====================================
-api.ai.js makes it easy to integrate [Api.ai](https://api.ai) natural language processing service into your web application. 
+api.ai.js makes it easy to integrate [Api.ai](https://api.ai) natural language processing service into your web application.
 
 ## Prepare your agent
 
@@ -59,7 +60,7 @@ apiAi.onInit = function () {
 ```
 
 Once socket is opened, start listening to the microphone.
- 
+
 ```javascript
 apiAi.onOpen = function () {
     apiAi.startListening();
@@ -71,7 +72,7 @@ To stop listening, invoke the following method:
 apiAi.stopListening();
 ```
 
-Firefox users don't need to interrupt listening manually. End of speech detection will do it for you. 
+Firefox users don't need to interrupt listening manually. End of speech detection will do it for you.
 
 To get access to the result, use callback onResults(data).
 
@@ -93,16 +94,16 @@ For information about [Response object structure](https://docs.api.ai/docs/query
 
 ```javascript
 /**
- * 
- * 'wss://api-ws.api.ai:4435/api/ws/query' 
+ *
+ * 'wss://api-ws.api.ai:4435/api/ws/query'
  */
 apiAi.server
 /**
- * Client access token of your agent. 
+ * Client access token of your agent.
  */
 apiAi.token
 /**
- * Unique session identifier to build dialogue. 
+ * Unique session identifier to build dialogue.
  */
 apiAi.sessionId
 /**
@@ -160,7 +161,7 @@ apiAi.close();
  */
 apiAi.onOpen = function () {};
 /**
- * It's triggered after websocket is closed. 
+ * It's triggered after websocket is closed.
  */
 apiAi.onClose = function () {};
 /**
@@ -168,7 +169,7 @@ apiAi.onClose = function () {};
  */
 apiAi.onInit = function () {};
 /**
- * It's triggered when listening is started. 
+ * It's triggered when listening is started.
  */
 apiAi.onStartListening = function () {};
 /**
